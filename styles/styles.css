@@ -24,7 +24,7 @@ body {
 
 .btn-alt {
   background-color: transparent;
-  border: 1px solid #ff3434;
+  border: #ff3434;
   color: #ff3434;
 }
 
@@ -34,8 +34,7 @@ body {
 }
 
 .btn-alt:hover {
-  background-color: transparent;
-  border: 1px solid #c40000;
+  background-color: #ff333333;
+  border: #c40000;
   color: #c40000;
 }
-
