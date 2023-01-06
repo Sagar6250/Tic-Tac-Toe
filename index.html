@@ -11,16 +11,18 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/overlays.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <header>
-      <h1 id="main-header">TIC-TAC-TOE</h1>
+    <div id="backdrop"></div>
+    <header id="main-header">
+      <h1>TIC-TAC-TOE</h1>
       <p>Built with HTML,CSS, and JavaScript</p>
     </header>
     <main>
-      <aside>
+      <aside class="modal" id="config">
         <h2>Choose your Name</h2>
         <form>
           <div>
@@ -28,8 +30,8 @@
             <input type="text" namye="playername" id="playername" />
           </div>
           <div>
-            <button type="button">Cancel</button>
-            <button type="submit">Save Changes</button>
+            <button type="button" class="btn btn-alt">Cancel</button>
+            <button type="submit" class="btn">Save Changes</button>
           </div>
         </form>
       </aside>
@@ -40,7 +42,7 @@
               <h2>Player 1</h2>
               <h3>'player-name'</h3>
               <p>X</p>
-              <button>Edit</button>
+              <button class="btn btn-alt">Edit</button>
             </article>
           </li>
           <li>
@@ -48,16 +50,16 @@
               <h2>Player 2</h2>
               <h3>'player-name'</h3>
               <p>O</p>
-              <button>Edit</button>
+              <button class="btn btn-alt">Edit</button>
             </article>
           </li>
         </ol>
-        <button>Start Game</button>
+        <button class="btn">Start Game</button>
       </section>
       <section id="active-game">
         <article>
           <h1>You WON, <span id="winner-name">PLAYER NAME</span></h1>
-          <button>Start New Game</button>
+          <button class="btn">Start New Game</button>
         </article>
         <p><span id="player-turn">PLAYER NAME</span>'s Turn</p>
         <ol>

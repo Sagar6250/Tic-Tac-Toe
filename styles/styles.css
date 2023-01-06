@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #fffaef;
+  background-color: #343434;
+}
+
+#main-header {
+  background-color: #212121;
+  color: white;
+  padding: 2rem 5%;
+  text-align: center;
+}
+
+.btn {
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  background-color: #ff3434;
+  border: 1px solid #ff3434;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-alt {
+  background-color: transparent;
+  border: 1px solid #ff3434;
+  color: #ff3434;
+}
+
+.btn:hover {
+  background-color: #c40000;
+  border: 1px solid #c40000;
+}
+
+.btn-alt:hover {
+  background-color: transparent;
+  border: 1px solid #c40000;
+  color: #c40000;
+}
+
