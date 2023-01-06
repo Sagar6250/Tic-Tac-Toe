@@ -20,9 +20,21 @@
   font: inherit;
   background-color: transparent;
   border: 1px solid #454444;
+  color: whitesmoke;
   border-radius: 4px;
   width: 15rem;
   padding: 0.35rem;
+}
+
+#error-input {
+  color: #d40202;
+  font-size: 0.8rem;
+}
+
+.error input {
+  border-color: #d40202;
+  color: #d40202;
+  background-color: #422b2b;
 }
 
 #game-configuration {
