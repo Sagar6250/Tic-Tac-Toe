@@ -1,8 +1,9 @@
 function resetGame() {
   activePlayer = 0;
   currentRound = 1;
+  console.log(gameOver.firstElementChild.innerHTML);
   gameOver.firstElementChild.innerHTML =
-    '<h1>You WON, <span id="winner-name">PLAYER NAME</span></h1>';
+    'You won, <span id="winner-name">PLAYER NAME</span>';
   gameOver.style.display = "none";
   backdrop.style.display = "none";
 
