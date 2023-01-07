@@ -1,6 +1,14 @@
 let editedPlayer = 0;
 let activePlayer = 0;
 
+const gameData = [
+  [0, 0, 0],
+  [0, 0, 0],
+  [0, 0, 0],
+];
+
+let currentRound = 1;
+
 const player = [
   {
     name: "",
@@ -23,9 +31,11 @@ const cancelConfigBtn = document.getElementById("cancel");
 
 const startGameBtn = document.getElementById("start-game");
 const gameArea = document.getElementById("active-game");
+const gameBoard = document.getElementById("game-board");
 const gameField = document.querySelectorAll("#game-board li");
 const activePlayerName = document.getElementById("player-turn");
-
+const gameOver = document.getElementById("game-over");
+const startNewGameBtn = document.getElementById("start-new-game");
 
 editPlayer1Btn.addEventListener("click", openPlayerConfig);
 editPlayer2Btn.addEventListener("click", openPlayerConfig);
@@ -36,6 +46,7 @@ backdrop.addEventListener("click", closePlayerConfig);
 formElement.addEventListener("submit", savePlayerConfig);
 
 startGameBtn.addEventListener("click", startNewGame);
+startNewGameBtn.addEventListener("click", resetGame);
 
 for (const gEle of gameField) {
   gEle.addEventListener("click", selectBean);

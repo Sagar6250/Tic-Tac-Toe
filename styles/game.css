@@ -1,10 +1,15 @@
 #active-game {
   text-align: center;
   margin: 2rem 0 5rem 0;
-  /* display: none;  */
+  display: none;
 }
 
 #game-over {
+  position: fixed;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   max-width: 40rem;
   margin: auto;
   width: 90%;
